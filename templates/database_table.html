@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operations</title>
+</head>
+<body>
+<h1>Log operations</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Operation</th>
+        <th>Time</th>
+    </tr>
+    {% for data_row in data_log %}
+    <tr>
+        <td>{{ data_row.id }}</td>
+        <td>{{ data_row.operation }}</td>
+        <td>{{ data_row.operation_time }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
